@@ -50,7 +50,7 @@ Csound =
     messageHistoryElement = new MessageHistoryElement
     messageHistoryElement.initialize @messageManager, editor
     atom.workspace.activateNextPane()
-    atom.workspace.getActivePane().addItem(messageHistoryElement).activateItem()
+    atom.workspace.getActivePane().addItem(messageHistoryElement)
     previousActivePane.activate()
 
     perform = (result) =>

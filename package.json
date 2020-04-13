@@ -19,5 +19,8 @@
     "csound-api": "latest",
     "d3": "3.x",
     "fs-plus": "2.x"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.10.1"
   }
 }
