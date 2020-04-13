@@ -49,7 +49,8 @@ Csound =
     previousActivePane = atom.workspace.getActivePane()
     messageHistoryElement = new MessageHistoryElement
     messageHistoryElement.initialize @messageManager, editor
-    atom.workspace.getActivePane().splitDown {items: [messageHistoryElement]}
+    atom.workspace.activateNextPane()
+    atom.workspace.getActivePane().addItem(messageHistoryElement).activateItem()
     previousActivePane.activate()
 
     perform = (result) =>
